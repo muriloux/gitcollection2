@@ -30,7 +30,7 @@ interface IGithubIssue {
   };
 }
 
-export const Repositories: React.FC = () => {
+const Repositories: React.FC = () => {
   const [repository, setRepository] = React.useState<IGithubRepository | null>(
     null,
   );
@@ -98,3 +98,5 @@ export const Repositories: React.FC = () => {
     </>
   );
 };
+
+export default Repositories;
